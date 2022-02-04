@@ -1,0 +1,4 @@
+on fs
+    export ANDROID_ROOT /system
+    wait /dev/block/platform/soc/${ro.boot.bootdevice}
+    symlink /dev/block/platform/soc/${ro.boot.bootdevice} /dev/block/bootdevice
